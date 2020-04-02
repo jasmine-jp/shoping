@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>買い物</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="decision.css">
+</head>
+<body>
+  <form id="form1">
+      <select id="fruit">
+        <option value="0" id="" hidden>商品</option>
+        <option value="100" id="apple">りんご 100円</option>
+        <option value="50" id="orange"> みかん 50円</option>
+        <option value="150" id="banana">バナナ 150円</option>
+      </select>
+  </form>
+  <form id="form2"></form>
+  <form id="form3"></form>
+  <button onclick="calc()">計算</button>
+  <p>合計金額が表示されます</p>
+  <script src="decision.js"></script>
+</body>
+</html>
+
+<!--jqueryをbody末項に置くと機能しない 外部libはheadに置くべき-->
